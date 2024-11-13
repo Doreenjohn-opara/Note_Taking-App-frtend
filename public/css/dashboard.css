@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Dashboard Styling  */
+.dashboard {
+   display: flex;
+   gap: 30px;
+   height: 100vh;
+   flex-grow: 1;
+   padding: 3px;
+}
+
+.dashboard .nav-container {
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.dashboard .dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 20px;
+  height: 90vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.dashboard-content h2 {
+  font-size: 30px;
+  text-align: left;
+  margin: 0;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Space between each note card */
+  height: 200px;
+  padding: 20px;
+}
+
+
+/* Sidebar styling */
+.sidebar  .dropdown-menu {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar  .dropdown-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    padding: 8px 12px;
+}
+
+.sidebar .dropdown-item:hover {
+    background-color: #D3D3D3;
+    border-radius: 5px;
+  }
+
+.sidebar .dropdown-toggle {
+    background-color: #181818;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.sidebar .dropdown-toggle:focus {
+    box-shadow: none;
+  }
+
+.sidebar {
+    width: 230px; /* Adjust width as needed */
+    height: 100vh;      /* Full height */
+    background-color: #f4f4f4; /* Light background for visibility */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    z-index: 900; /*; /* Ensure it stays on top */
+}
+
+.sidebar img {
+    max-width: 100%;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.sidebar button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color:  #1f1c2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+.sidebar p{
+    margin-top: 15px;
+    color: #333;
+    font-weight: 400;
+}
+
+.sidebar .bottom {
+    margin-top: 5px;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Navbar styling #f8f9fa */
+  /* Search container with icon and input */
+  .search-container {
+    background-color: #f4f4f4;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    position: relative;
+    display: inline-block;
+    gap: 3px;
+    width: 950px;
+    height: 100px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: -0.5% 0.5%;
+  }
+  
+  .search-icon {
+    position: absolute;
+    transform: translateY(-10%);
+    top: 40%;
+    left: 5%;
+    color: #6c757d;
+    font-size: 20px;
+  }
+  
+  /* Styling the input field */
+  .search-input {
+    padding: 8px 8px 20px 50px; /* Extra left padding for the icon */
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 800px;
+    height: 70px;
+    padding: 5px 50px;
+    margin: 10px 20px;
+  }
+  
+  .search-input:focus {
+    border-color: #495057;
+  }
+  
+  /* Navbar icons */
+.navbar-left {
+  background-color: #f4f4f4;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  position: relative;
+  display: inline-block;
+  gap: 10px;
+  /* margin: 5px 20px; */
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.navbar-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+  .navbar-icon .btn-group {
+    margin: 7px 5px 45px 4px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #343a40;
+    border: 1px solid black;
+  }
+
+.navbar-icon .dropdown-toggle {
+    background-color: #181818;
+    color: white;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+.navbar-icon  .dropdown-menu {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.navbar-icon .btn-dark-custom {
+    background-color: #181818;
+    color: white; /* Makes the text color white for better contrast */
+    border-color: #181818; /* Ensures the border matches the background */
+  }
+
+/* Note Card Styling */
+  .note-card {
+    background-color: #87CEFA; /* Light blue color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    min-width: 30%;
+    height: 270px;
+    position: relative;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .note-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+  }
+  
+  .note-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .note-content {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .note-card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 10;
+    display: none;
+  }
+  
+  .note-card:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    gap: 5px;
+    color: #333333;
+  }
+  
+  
